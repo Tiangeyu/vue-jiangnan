@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .loading{
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+          
+        }
+        .contents{
+            margin: 0 auto;
+            margin-top: 40vh;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div id="pay" class="loading">
+        <div class="contents">
+            正在加载支付页面...
+        </div>     
+    </div>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>  
+    <script>
+      
+     
+        //alert(document.URL);
+        var arr = document.URL.split("?");
+        var orderAmount = arr[1].split('&')[0].split('=')[1];
+        var bussOrderNo = arr[1].split('&')[1].split('=')[1];
+        var orderId = arr[1].split('&')[2].split('=')[1];
+        //alert(orderAmount+";"+bussOrderNo)
+        $.ajax({
+            type: "post",
+            data: {
+                    orderAmount: orderAmount,
+                    bussOrderNo: bussOrderNo,
+                    orderIdList: orderId
+            },
+            dataType: 'json',
+            url: '/eb-web-api/mobile/order/prePayment',
+            success: function(res){
+                    document.write(res.showPage)
+            },
+            error:function(res){
+                    alert('error')
+            }
+        })
+     
+    </script>
+</body>
+</html>

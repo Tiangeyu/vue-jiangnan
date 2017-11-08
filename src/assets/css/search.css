@@ -1,0 +1,78 @@
+header {
+  height: 88px;
+  background: #3da4f1;
+  box-sizing: border-box;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1111;
+}
+header .a {
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  display: block;
+  width: 500px;
+  height: 50px;
+}
+header .search {
+  width: 500px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin-top: 22px;
+}
+header .search .iconSearch {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 24px;
+  margin-right: 8px;
+  background: url(../../assets/imgs/search.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 10px;
+}
+header .search input {
+  line-height: 50px;
+  display: block;
+  font-size: 26px;
+  color: #333;
+}
+header .search input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #efeeee;
+}
+header .search input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #efeeee;
+}
+header .search input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #efeeee;
+}
+header .search input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #efeeee;
+}
+header p {
+  font-size: 28px;
+  color: #fff;
+  line-height: 88px;
+  margin: 0 29px;
+  display: block;
+}
+.back {
+  width: 40px;
+  height: 88px;
+  background: url(../../assets/imgs/daohanglan_fanhui_@2x.png) no-repeat center center;
+  background-size: 22px 40px;
+  margin-left: 30px;
+}
+.ml-20 {
+  margin-left: 80px;
+}
+.div {
+  height: 88px;
+}

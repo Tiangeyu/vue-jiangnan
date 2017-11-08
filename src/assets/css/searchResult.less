@@ -1,0 +1,197 @@
+.div{
+    height: 74+88px;
+}
+.btns{
+    height: 74px;
+    background: #fff;
+    li{
+        height: 48px;
+        margin-top: (74-48)/2px;
+        text-align: center;
+        line-height: 48px;
+        font-size: 26px;
+        color: #333;
+        p{
+            display: inline-block;
+        }
+    }
+    li:nth-child(2){
+        border-left:1px solid #e3e3e3;
+        border-right:1px solid #e3e3e3;
+    }
+    .icon-jiao{
+        width: 25px;
+        height: 18px;
+        background: url(../imgs/seHuijiao.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+    .icon-jiao.active{
+        background: url(../imgs/seLanjiao.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.select{
+    height: 74px;
+    position: fixed;
+    top: 88px;
+    left: 0;
+    width: 100%;
+}
+
+.opacity{
+    position: fixed;
+    left: 0;
+    top: 160px;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 111111111;
+}
+
+.merchant{
+    background: #fff;
+    border-top: 1px solid #e1e1e1;
+    width: 750px;
+    position: absolute;
+}
+
+.classA,.classB{
+    font-size: 28px;
+    li{
+       border-bottom: 1px solid #e1e1e1;
+       .icon-jiao2{
+           width: 12px;
+           height: 21px;
+           float: right;
+           margin-top: 26px;
+           margin-right: 20px;
+       }
+       
+       p{
+        line-height: 74px;
+       }
+       .name{
+           margin-left: 30px;
+       }
+       .num{
+           margin-right: 20px;
+       }
+       .mr-50{
+        margin-right: 50px;
+    }
+    }
+    li:last-child{
+        border-bottom: none;
+    }
+}
+
+           
+.active{
+    color: #3da4f1!important;
+    background: #f0f0f0; 
+}
+
+.classB{
+    border-left:  1px solid #e1e1e1;
+    background: #f0f0f0;
+    width: 320px;
+    li{
+       background-image:none;  
+       width: 100%;
+    }
+}
+
+
+
+// 列表
+.tenants{
+    li{
+        border-top:1px solid #e1e1e1;
+        border-bottom:1px solid #e1e1e1; 
+        background: #ffffff;
+        padding-top: 20px;
+        box-sizing: border-box;
+        margin-bottom: 10PX;
+        .tenantImg{
+            width: 126px;
+            height: 126px;
+            border-radius: 5px;
+            margin-right: 20px; 
+            margin-left: 30px;
+        }
+        .right{
+            .top{
+                padding-right: 30px;
+                box-sizing: border-box;                
+                .tenantName{
+                    font-size: 34px;
+                    color: #333;
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+                .starBox{
+                    i{
+                       float: left; 
+                       width: 26px;
+                       height: 26px;
+                       margin-right: 7px;
+                       background: url(../imgs/pinlun_xiaostar_@2x.png) no-repeat;
+                       background-size:100% 100%; 
+                    }
+                    .icon-ccc{
+                        background: url(../imgs/storeStar.png) no-repeat;
+                        background-size:100% 100%; 
+                    }
+                }
+                p{
+                    color: #666;
+                }
+                .addres{
+                    font-size: 26px;
+                    color: #666;
+                    margin-top: 14px;
+                    margin-bottom: 20px;
+                    span{float: left}
+                    i{
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    float: right;
+                    }             
+                    .icon-juan{
+                        background: url(../imgs/store_quan.png) no-repeat;
+                        background-size:100% 100%;
+                    }
+                    .icon-tuan{
+                        background: url(../imgs/store_tuan.png) no-repeat;
+                        background-size:100% 100%;
+                    }
+                    .icon-hui{
+                        background: url(../imgs/store_hui.png) no-repeat;
+                        background-size:100% 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.info{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+     img{
+        height: 200px;
+        width: 277px;
+    }
+    p{
+        color: #999;
+        font-size: 34px;
+        margin-top: 30px;
+    }
+}
