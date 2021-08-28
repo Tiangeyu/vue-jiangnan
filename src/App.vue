@@ -11,6 +11,7 @@ export default {
   created() {
 
     // 测试封版111
+    // 再加注释
      this.$http.get('/eb-web-api/mobile/base/queryPicUrl').then((res)=>{
         setItem('picUrl', res.body.url)
         this.$router.push("/index")
