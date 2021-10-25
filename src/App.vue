@@ -9,7 +9,8 @@ import {setItem, getItem} from './assets/js/common'
 export default {
   name: 'app',
   created() {
-
+    
+    // <v1.0.2>
     // 测试封版111
     // 再加注释
      this.$http.get('/eb-web-api/mobile/base/queryPicUrl').then((res)=>{
